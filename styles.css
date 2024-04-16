@@ -17,8 +17,8 @@ body{
 
 /*<---------NAVBAR -------->*/
 .logo img{
-  max-width: 100px;
-  max-height: 100px;
+  max-width: 50px;
+  max-height: 50px;
   border-radius: 50px;
 }
 nav{
@@ -66,7 +66,7 @@ nav .nav-bar{
 
 .toggle-button{
   position: absolute;
-  top:3.5rem;
+  top:2.2rem;
   right: 2rem;
   display: none;
   flex-direction: column;
