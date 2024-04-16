@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="PT">
+<head>
+    <script src="app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BE - whateveryouwant</title>
+</head>
+<body>
+    <header>
+        <a href="#home" class="logo">BE</a>
+
+        <nav>
+          <a href="#home">Home</a>
+          <a href="#sobre">Sobre</a>
+          <a href="#servicos">Serviços</a>
+          <a href="#contacto">Contactos</a>
+        </nav>
+
+    </header>
+
+
+    <main>
+      <section id="home">Home</section>
+      <section id="sobre">Sobre</section>
+      <section id="servicos">Serviços</section>
+      <section id="contacto">Contactos</section>
+
+    </main>
+
+
+
+    <footer>
+        
+        <ul>
+            <li><a href="https://www.instagram.com/whateveryouwantbe/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/128/174/174855.png" alt="Ícone do Instagram" id="instagram-icon"></a></li>
+            <li><a href="https://www.facebook.com/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/128/174/174848.png" alt="Ícone do Facebook" id="facebook-icon"></a></li>
+            <li><a href="https://www.linkedin.com/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/128/174/174857.png" alt="Ícone do LinkedIn" id="linkedin-icon"></a></li>
+        </ul> 
+        <div class="footer-text">
+           
+            <p>&copy; 2023 <a href="#home" target="_blank">WHATEVERYOUWANTBE</a>. All rights reserved.</p>
+        </div>
+
+
+    </footer>
+
+
+    
+
+    <script>
+        //barra navegação transparente com scroll para baixo
+        $(document).ready(function() {
+          $(window).scroll(function() {
+            if ($(this).scrollTop() > 0) {
+              $('header').addClass('scrolled');
+            } else {
+              $('header').removeClass('scrolled');
+            }
+          });
+        });
+        //logos footer aumentam
+        $(document).ready(function() {
+  $('footer ul li a img').hover(function() {
+    $(this).css('transform', 'scale(1.4)');
+  }, function() {
+    $(this).css('transform', 'scale(1)');
+  });
+});
+       
+    </script>
+
+</body>
+</html>
