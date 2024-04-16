@@ -1,63 +1,167 @@
 /*cor #edaa5c 
 /*cor #d9d9d9 */
 
-@media screen and (max-width:600px){
-  body{
-    witdh:100%
-  }
-}
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+body{
+  background-color: rgba(250, 250, 250, 0.863) ;
+}
+
+
 /*<---------NAVBAR -------->*/
-
-header{
-  position:fixed;
-  top: 0;
+nav{
+  position: fixed;
   left: 0;
+  top:0;
   width: 100%;
-  padding: 20px 120px;
-  background: #d9d9d9;
+  background-color: #edaa5c;
+  padding: 20px;
+}
+nav .nav-bar{
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  align-items: center;
-  z-index: 100;
-}
-.logo{
-  font-size: 25px;
-  color: #edaa5c;
-  text-decoration: none;
-  font-weight: 600;
+  height: 100%;
+  max-width: 1200px;
+  
+  margin: auto;
 }
 
-nav a {
-  font-size: 18px;
-  color: #fff;
-  text-decoration: none;
+.nav-bar .logo a{
+  font-size: 35px;
   font-weight: 500;
-  margin-left: 35px;
-  transition:.3s;
-}
-nav a:hover{
-  color: #edaa5c;
-  font-weight: 700;
+  color: white;
 }
 
-section{
-  min-height: 100vh;
+.nav-bar .nav-links{
   display: flex;
-  justify-content: center;
   align-items: center;
-  background: #d9d9d9;
-  font-size: 100px;
-  color: #fff;
-  font-weight: 700;
 }
-section:nth-child(odd){
-  background: #edaa5c;
+.nav-bar .nav-links li{
+  list-style:  none;
+  margin: 0 8px;
+}
+.nav-links li a{
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+  padding: 10px 4px;
+}
+.nav-links li a:hover{
+  color: rgba(0, 0, 0, 0.349);
+  font-size: 20px;
+}
 
+.toggle-button{
+  position: absolute;
+  top:2rem;
+  right: 2rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
 }
+.toggle-button .bar{
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+
+/*---->BODY<-----*/
+.body-section{
+  padding: 10px;
+}
+#home{
+  margin-top: 80px;
+  height: 500px;
+  background-color: #d9d9d9;
+  text-align: center;
+  color: #edaa5c;
+}
+#sobre{
+  height: 500px;
+  background-color: #edaa5c;
+  text-align: center;
+  color:#d9d9d9;
+}
+#servicos{
+  height: 500px;
+  background-color: #d9d9d9;
+  text-align: center;
+  color: #edaa5c;
+}
+#contacto{
+  height: 500px;
+  background-color: #edaa5c;
+  text-align: center;
+  color:#d9d9d9;
+}
+
+
+
+
+
+/*------->footer<-------*/
+
+.redessociais{
+  height: 10px;
+  width: 10px;
+  display: flex;
+
+  
+}
+.redessociais li{
+  max-height: 10px;
+  list-style: none;
+  padding-left: 10px;
+  text-align: center;
+}
+.redessociais li img{
+  max-height: 20px;
+  max-width: 20px;
+}
+
+.footer-text{
+  text-align: right;
+  margin-right: 15px;
+  margin-bottom: 5px;
+  font-size: 10px;
+}
+
+
+@media (max-width:600px){
+
+  .toggle-button{
+    display: flex;
+  }
+  .navbar-links{
+    display: none;
+    width: 100%;
+  }
+  .nav-bar{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .nav-bar ul {
+    width: 100%;
+    flex-direction: column;
+  }
+  .nav-links li{
+    text-align: center;
+  }
+  .nav-links li a{
+    padding: .5rem, 1rem;
+  }
+  .navbar-links.active{
+    display: flex;
+  }}
