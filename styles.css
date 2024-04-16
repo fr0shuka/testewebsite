@@ -81,30 +81,78 @@ nav .nav-bar{
 .body-section{
   padding: 10px;
 }
+
+/*-----> Home <-----*/
 #home{
   margin-top: 80px;
-  height: 500px;
   background-color: #d9d9d9;
-  text-align: center;
   color: #edaa5c;
 }
+
+#home h1{
+  text-align: center;
+  padding-top: 25px;
+}
+#home img{
+  float:left;
+  max-height: 200px;
+  max-width: 200px;
+  border-radius: 85px;
+  align-content: left;
+  padding: 5px;
+  margin-left: 5px;
+  margin-top: 25px;
+}
+.sectionHome{
+  background-color: white;
+  border-radius: 100px;
+  margin-bottom: 5px;
+}
+.text-home{
+ display: flex;
+ padding-top: 50px;
+ padding-left: 50px;
+ padding-right: 100px;
+ padding-bottom: 50px;
+
+}
+
+/*-----> Sobre <-----*/
 #sobre{
   height: 500px;
   background-color: #edaa5c;
   text-align: center;
   color:#d9d9d9;
+  margin-bottom: 5px;
 }
+#sobre h1{
+  text-align: center;
+  padding-top: 25px;
+}
+
+
 #servicos{
   height: 500px;
   background-color: #d9d9d9;
   text-align: center;
   color: #edaa5c;
+  margin-bottom: 5px;
 }
+#servicos h1{
+  text-align: center;
+  padding-top: 25px;
+}
+
 #contacto{
   height: 500px;
   background-color: #edaa5c;
   text-align: center;
   color:#d9d9d9;
+  margin-bottom: 5px;
+}
+#contacto h1{
+  text-align: center;
+  padding-top: 25px;
 }
 
 
