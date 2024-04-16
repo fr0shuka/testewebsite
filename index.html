@@ -48,6 +48,27 @@
 
     
 
+    <script>
+        //barra navegação transparente com scroll para baixo
+        $(document).ready(function() {
+          $(window).scroll(function() {
+            if ($(this).scrollTop() > 0) {
+              $('header').addClass('scrolled');
+            } else {
+              $('header').removeClass('scrolled');
+            }
+          });
+        });
+        //logos footer aumentam
+        $(document).ready(function() {
+  $('footer ul li a img').hover(function() {
+    $(this).css('transform', 'scale(1.4)');
+  }, function() {
+    $(this).css('transform', 'scale(1)');
+  });
+});
+       
+    </script>
 
 </body>
 </html>
