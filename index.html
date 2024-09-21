@@ -1,108 +1,83 @@
 <!DOCTYPE html>
-<html lang="PT">
+<html lang="en">
 <head>
-
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BE - whateveryouwant</title>
+    <title>Whatever You Want Be</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-      <nav>
-        <div class="nav-bar">
-          <div class="logo">
-              <span class="logo"><a href="#home" class="logo"><img src="be.png" alt="logo"></a></span>
-              <a href="#" class="toggle-button">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-              </a>
-          </div>
-          <div class="navbar-links">
-              <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#servicos">Serviços</a></li>
-                <li><a href="#contacto">Contactos</a></li>
-              </ul>
+        <nav>
+            <div class="logo"> <span class="logo"><a href="#home" class="logo"><img src="be.png" alt="logo"></a></span></div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
-        </div>  
-      </nav>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <main class="body-section">
-      <section id="home"><h1>HOME</h1><br><br>
-       <div class="sectionHome"> <div class="img">
-          <img src="logo.png" alt="logo">
-        </div>
-        <div class="text-home">
-          A BE é feita de pessoas para pessoas. Somos um conjunto de seres humanos com vidas distintas, experiências distintas, formações diferenciadas, mas que se interligam, na aprendizagem continua, na ligação com o outro e desejar o melhor para o outro.
-        <br><br>A BE nasce da vontade de falar, simplificar, trazer para cima da mesa, qual tema seja. O objetivo é simplificar, normalizar, falar, tornar comum, para que o desconhecido passe a ser conhecido e que, mesmo não concordando, se saiba o que se fala.
-        <br><br>O objetivo da BE é desconstruir para construir. E a BE é feita de pessoas em construção, que mutuamente se ajudam a construir e pretendem que todos, em conjunto, se construam.
-          <br><br>Dessa forma, a BE será o que tu quiseres, o que nós quisermos.
-          <br><br><br>
-          Bem-vindo a esta caminhada. Seguimos juntos? </div></div>
-      </section>
+    <main>
+        <section id="hero">
+            <h1>Empowering You to Be Whatever You Want</h1>
+            <p>Join our community and unlock your potential.</p>
+            <a href="#contact" class="cta-button">Get Started</a>
+        </section>
 
+        <section id="about">
+            <h2>About Us</h2>
+            <p>We believe in the power of personal growth and transformation. Our mission is to provide you with the tools and support you need to become the best version of yourself.</p>
+        </section>
 
-      <section id="sobre"><h1>SOBRE</h1>
+        <section id="services">
+            <h2>Our Services</h2>
+            <div class="service-grid">
+                <div class="service-item">
+                    <h3>Personal Coaching</h3>
+                    <p>One-on-one sessions to help you achieve your goals.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Workshops</h3>
+                    <p>Interactive group sessions on various self-improvement topics.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Online Courses</h3>
+                    <p>Self-paced learning materials to enhance your skills.</p>
+                </div>
+            </div>
+        </section>
 
+        <section id="instagram-feed">
+            <h2>Latest Instagram Posts</h2>
+            <div id="posts-container"></div>
+        </section>
 
-      </section>
-
-      <section id="servicos"><h1>SERVIÇOS</h1>
-
-
-      </section>
-
-      <section id="contacto"><h1>CONTACTOS</h1>
-      
-      </section>
+        <section id="contact">
+            <h2>Stay Connected</h2>
+            <form id="subscribe-form">
+                <input type="email" id="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
     </main>
 
-
-
     <footer>
-        
-        <ul class="redessociais">
-            <li><a href="https://www.instagram.com/whateveryouwantbe/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/128/174/174855.png" alt="Ícone do Instagram" id="instagram-icon"></a></li>
-            <li><a href="https://www.facebook.com/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/128/174/174848.png" alt="Ícone do Facebook" id="facebook-icon"></a></li>
-            <li><a href="https://www.linkedin.com/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/128/174/174857.png" alt="Ícone do LinkedIn" id="linkedin-icon"></a></li>
-        </ul> 
-        <div class="footer-text">
-           
-            <p>&copy; 2023 <a href="#home" target="_blank">WHATEVERYOUWANTBE</a>. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="#" class="icon">Instagram</a>
+            <a href="#" class="icon">Twitter</a>
+            <a href="#" class="icon">Facebook</a>
         </div>
-
-
+        <p>&copy; 2024 Whatever You Want Be. All rights reserved.</p>
     </footer>
 
-
-    
-
-    <script>
-        //barra navegação transparente com scroll para baixo
-        $(document).ready(function() {
-          $(window).scroll(function() {
-            if ($(this).scrollTop() > 0) {
-              $('header').addClass('scrolled');
-            } else {
-              $('header').removeClass('scrolled');
-            }
-          });
-        });
-        //logos footer aumentam
-        $(document).ready(function() {
-  $('footer ul li a img').hover(function() {
-    $(this).css('transform', 'scale(1.4)');
-  }, function() {
-    $(this).css('transform', 'scale(1)');
-  });
-});
-       
-    </script>
-
+    <script src="script.js"></script>
 </body>
 </html>
