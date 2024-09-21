@@ -202,3 +202,14 @@ footer {
   color: #edaa5c;
   text-decoration: none;
 }
+
+.icon img{
+  max-width: 25px;
+  max-height: 25px;
+  border-radius: 5px;
+  opacity: 75%;
+}
+
+.icon img:hover{
+  opacity: 100%;
+}
